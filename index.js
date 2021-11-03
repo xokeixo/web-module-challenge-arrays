@@ -45,8 +45,8 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-const copyOriginalFlavors = [ ...originalFlavors ];
 function copy(array){
+  copyOriginalFlavors = [ ...originalFlavors ];
 }    
 console.log(copyOriginalFlavors);   
 
@@ -82,9 +82,11 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(string){
-  
+function addFlavor(array, flavor){
+  copyOriginalFlavors.unshift(flavor);
+  return copyOriginalFlavors;
 }
+console.log(addFlavor(copyOriginalFlavors, 'Rainbow Sherbert'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
